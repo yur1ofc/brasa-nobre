@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasa Nobre · Steak & Bar · Barreiras BA</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 (ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- NAVBAR FIXA PREMIUM (refinada) -->
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="#" class="logo">BRASA<span>NOBRE</span></a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Início</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#cardapio" class="nav-link">Cardápio</a></li>
+                <li><a href="#eventos" class="nav-link">Eventos</a></li>
+                <li><a href="#galeria" class="nav-link">Galeria</a></li>
+                <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#reserva" class="btn-reserva-nav">Reservar</a>
+                <div class="hamburger">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO CINEMATOGRÁFICA refinada -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <span class="hero-tagline">✦ Barreiras · BA ✦</span>
+            <h1 class="hero-title">O fogo encontra <br>a sofisticação</h1>
+            <p class="hero-subtitle">Carnes nobres, drinks autorais e noites inesquecíveis.</p>
+            <div class="hero-badges">
+                <span>🔥 Carnes na brasa</span>
+                <span>🍸 Drinks autorais</span>
+                <span>🎵 Música ao vivo</span>
+            </div>
+            <div class="hero-buttons">
+                <a href="#cardapio" class="btn btn-primary">VER CARDÁPIO</a>
+                <a href="#reserva" class="btn btn-outline">RESERVAR MESA</a>
+                <a href="https://wa.me/5577999999999" class="btn btn-wa"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="hero-scroll">Explore</div>
+    </section>
+
+    <!-- DIFERENCIAIS (cards com ícone) -->
+    <section class="diferenciais">
+        <div class="container">
+            <div class="diferenciais-grid">
+                <div class="diferencial-card reveal">
+                    <i class="fas fa-fire"></i>
+                    <h3>Carnes nobres</h3>
+                    <p>Corte argentino e maturação dry-age para uma experiência única.</p>
+                </div>
+                <div class="diferencial-card reveal">
+                    <i class="fas fa-cocktail"></i>
+                    <h3>Drinks autorais</h3>
+                    <p>Mixologia criativa com ingredientes regionais e toques especiais.</p>
+                </div>
+                <div class="diferencial-card reveal">
+                    <i class="fas fa-microphone-alt"></i>
+                    <h3>Música ao vivo</h3>
+                    <p>Toda semana atrações especiais para embalar suas noites.</p>
+                </div>
+                <div class="diferencial-card reveal">
+                    <i class="fas fa-couch"></i>
+                    <h3>Ambiente premium</h3>
+                    <p>Iluminação intimista e espaços instagramáveis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE + EXPERIÊNCIA -->
+    <section id="sobre" class="sobre">
+        <div class="container sobre-grid">
+            <div class="sobre-imagem reveal">
+                <img src="https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Salão Brasa Nobre">
+                <div class="sobre-experiencia-badge">
+                    <i class="fas fa-star"></i> 8 anos de tradição
+                </div>
+            </div>
+            <div class="sobre-texto reveal">
+                <span class="section-tag">✦ SOBRE NÓS</span>
+                <h2>Uma nova experiência em carnes na brasa</h2>
+                <p class="sobre-desc">No <strong>Brasa Nobre</strong>, unimos técnicas de parrilla argentina, ingredientes selecionados e um ambiente pensado para criar momentos especiais. Seja para um jantar romântico, comemoração em grupo ou happy hour com amigos, oferecemos um serviço impecável e um cardápio que valoriza o sabor da carne e a arte dos drinks.</p>
+                <div class="sobre-features">
+                    <div><i class="fas fa-check-circle"></i> Carnes premium</div>
+                    <div><i class="fas fa-check-circle"></i> Carta de vinhos</div>
+                    <div><i class="fas fa-check-circle"></i> Espaço para eventos</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARDÁPIO DIGITAL + FILTROS -->
+    <section id="cardapio" class="cardapio">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">✦ NOSSO CARDÁPIO</span>
+                <h2>Escolha seu prato</h2>
+            </div>
+            <div class="filtros-cardapio reveal">
+                <button class="filtro-btn active" data-cat="todos">Todos</button>
+                <button class="filtro-btn" data-cat="entradas">Entradas</button>
+                <button class="filtro-btn" data-cat="principais">Pratos principais</button>
+                <button class="filtro-btn" data-cat="drinks">Drinks</button>
+                <button class="filtro-btn" data-cat="bebidas">Bebidas</button>
+            </div>
+            <div class="cardapio-grid" id="cardapio-grid"></div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO EXPERIÊNCIA (AMBIENTE) -->
+    <section class="experiencia">
+        <div class="container experiencia-grid">
+            <div class="experiencia-texto reveal">
+                <span class="section-tag">✦ O AMBIENTE</span>
+                <h2>Um espaço para celebrar a vida</h2>
+                <p>Iluminação suave, madeira e cobre, detalhes que criam um cenário intimista e acolhedor. Perfeito para um jantar especial ou uma noite com amigos.</p>
+                <ul>
+                    <li><i class="fas fa-check"></i> Salão principal com vista para a parrilla</li>
+                    <li><i class="fas fa-check"></i> Área externa climatizada</li>
+                    <li><i class="fas fa-check"></i> Espaço instagramável com iluminação exclusiva</li>
+                </ul>
+            </div>
+            <div class="experiencia-imagem reveal">
+                <img src="https://images.pexels.com/photos/277253/pexels-photo-277253.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Ambiente interno refinado">
+            </div>
+        </div>
+    </section>
+
+    <!-- EVENTOS / MÚSICA AO VIVO -->
+    <section id="eventos" class="eventos">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">✦ AGENDA</span>
+                <h2>Música ao vivo</h2>
+            </div>
+            <div class="eventos-grid" id="eventos-grid"></div>
+        </div>
+    </section>
+
+    <!-- GALERIA PREMIUM -->
+    <section id="galeria" class="galeria">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">✦ REGISTROS</span>
+                <h2>Momentos Brasa Nobre</h2>
+            </div>
+            <div class="galeria-grid" id="galeria-grid"></div>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS (prova social) -->
+    <section id="depoimentos" class="depoimentos">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">✦ DEPOIMENTOS</span>
+                <h2>Quem vem, volta</h2>
+            </div>
+            <div class="depoimentos-grid" id="depoimentos-grid"></div>
+        </div>
+    </section>
+
+    <!-- RESERVA COM FEEDBACK VISUAL -->
+    <section id="reserva" class="reserva">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">✦ RESERVAS</span>
+                <h2>Garanta sua mesa</h2>
+            </div>
+            <div class="reserva-wrapper reveal">
+                <form class="form-reserva" id="formReserva">
+                    <div class="form-row">
+                        <input type="text" placeholder="Nome completo" id="nome" required>
+                        <input type="tel" placeholder="Telefone / WhatsApp" id="telefone" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="number" placeholder="Nº de pessoas" min="1" id="pessoas" required>
+                        <input type="date" id="data" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="time" id="horario" required>
+                        <select id="preferencia">
+                            <option>Salão principal</option>
+                            <option>Área externa</option>
+                            <option>Perto do palco</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-reserva">FAZER RESERVA</button>
+                </form>
+                <div class="reserva-feedback" id="reservaFeedback"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO + MAPA -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">✦ CONTATO</span>
+                <h2>Estamos em Barreiras</h2>
+            </div>
+            <div class="contato-grid reveal">
+                <div class="contato-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-pin"></i>
+                        <p>Avenida Rio Grande, 1234 - Centro, Barreiras - BA</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Terça a Domingo • 18h às 02h</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>(77) 99999-9999</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <p>(77) 98888-8888</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-instagram"></i>
+                        <p>@brasnobre</p>
+                    </div>
+                    <div class="contato-buttons">
+                        <a href="https://wa.me/5577999999999" class="btn btn-primary"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                        <a href="https://maps.google.com/?q=Barreiras+BA" target="_blank" class="btn btn-outline">Abrir no mapa</a>
+                    </div>
+                </div>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.094847788064!2d-45.0057836!3d-12.1532336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x934433c0c3f0d63%3A0x6f1c7ab3d3e6b6a!2sBarreiras%2C%20BA!5e0!3m2!1spt-BR!2sbr!4v1687302123456!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER PREMIUM -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">BRASA<span>NOBRE</span></a>
+                    <p>Restaurante & Bar · carnes nobres e drinks autorais no coração de Barreiras.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegue</h4>
+                    <a href="#home">Início</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#cardapio">Cardápio</a>
+                    <a href="#eventos">Eventos</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="#">Política de privacidade</a>
+                    <a href="#">Termos de uso</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Redes</h4>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Brasa Nobre. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÕES FLUTUANTES -->
+    <a href="https://wa.me/5577999999999" class="float-wa" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <div class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></div>
+
+    <!-- SCRIPTS -->
+    <script src="script.js"></script>
+</body>
+</html>
